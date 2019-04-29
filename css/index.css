@@ -283,6 +283,7 @@ a {
         width: 85%;
   }
 }
+
 .advert {
 	display: flex;
 	justify-content: space-evenly;
@@ -291,20 +292,24 @@ a {
 	font-size: 1.3rem;
 }
 
-
 @media(max-width: 500px) {
     .advert {
         display: flex;
         flex-direction: column;
-        width: 100%;
         font-size: 1rem;
         border-bottom: 1px solid black;
-        padding-bottom: 30px;
-        margin: 0 10px;
+        padding-bottom: 60px;
+        margin: 0;
+        padding: 0 12px 30px 12px;
     }
 
     .advert div {
+        margin: 0;
         line-height: 25px;
+    }
+
+    .advert h2 {
+        margin: 22px 0 0 0;
     }
   }
 
@@ -327,6 +332,15 @@ footer{
 	margin: 20px 0 100px 22px;
 } 
 
+
+@media(max-width: 500px){
+    footer{
+        display: block;
+        margin: 0;
+        padding: 0 12px;
+    } 
+}
+
 footer div {
 	margin: 20px 0 20px 0;
 	font-size: 1.3rem;
@@ -341,6 +355,14 @@ footer div {
 	padding: 10px;
 	line-height: 20px;
 	margin-left:30px;
+}
+
+@media(max-width: 500px){
+    .contact {
+
+        line-height: 20px;
+        margin: 0;
+    }
 }
 .copyright {
 	text-align: center;
