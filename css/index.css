@@ -81,16 +81,28 @@ header {
 	height: 80px;
 }
 nav {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
+    display: flex;
+    justify-content: space-around;
+    align-self: baseline;
 	font-size: 1.5rem;
-	font-weight: 500;
+    font-weight: 500;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px 0 0;
 }
 .links {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.logo {
+    
 }
 @media(max-width: 800px){
+    header {
+        margin:  45px 0 0 0;
+    }
     nav {
         display: flex;
         flex-direction: column-reverse;
@@ -120,7 +132,7 @@ nav {
     }
 }
 
-nav a {
+nav div{
 	color: grey;
 	margin: 27px 0 0 0;
 }
@@ -166,7 +178,6 @@ nav a {
 }
 .main-text {
 	margin: 70px 0 0 0;
-
 }
 
 @media(max-width: 800px) {
