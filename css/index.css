@@ -56,7 +56,6 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
-    margin:  0 40px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -114,13 +113,7 @@ nav {
         justify-content: space-evenly;
         align-items: center;
     }
-
-    .links a {
-
-    }
 }
-
-
 nav a {
 	color: grey;
 	margin: 27px 0 0 0;
@@ -132,12 +125,26 @@ nav a {
 	justify-content: space-evenly;
 	margin: 70px 0 50px 0;
 }
+
+
+@media(max-width: 500px) {
+    .main{
+        margin: 270px 0 0 0;
+        border-bottom: 1px solid black;
+    }
+}
+
 .main-action {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
+@media(max-width: 500px) {
+    .main-action{
+        margin: 0 0 50px 0;
+    }
+}
 .main-text {
 	margin: 70px 0 0 0;
 
@@ -176,6 +183,12 @@ hr {
 
 }
 
+@media(max-width: 500px) {
+    hr {
+        display: none;
+    }
+}
+
 .button {
 	padding: 10px 50px;
 	background-color: rgb(255, 255, 255);
@@ -197,6 +210,13 @@ a {
 	  align-items: center;
 	  margin: 0 0 40px 0;
   }
+  @media(max-width: 500px) {
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
   .feature {
 	  margin: 0 0 0 60px;
@@ -204,6 +224,13 @@ a {
 	  font-size: 1.3rem;
   }
 
+  @media(max-width: 500px) {
+  .feature {
+    line-height: 22px;
+    font-size: 1rem;
+    margin-top: 30px;
+  }
+}
 
   .about {
 	margin: 0 30px 0 0;
@@ -211,6 +238,15 @@ a {
 	font-size: 1.3rem;
 }
 
+@media(max-width: 500px) {
+    .about {
+        margin-left: 60px;
+        line-height: 22px;
+        font-size: 1rem;
+        margin-top: 30px;
+    }
+  }
+  
 @media(max-width: 800px){
     .feature {
         font-size: 1rem;
@@ -232,6 +268,16 @@ a {
 	margin: 40px 0 0 30px;
 	font-size: 1.3rem;
 }
+
+
+@media(max-width: 500px) {
+    .advert {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        text-align: left;
+    }
+  }
 
 .advert div {
     margin: 0 10px;
