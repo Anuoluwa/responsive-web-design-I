@@ -147,8 +147,9 @@ nav a {
 
 @media(max-width: 500px) {
     .main{
-        margin: 490px 0 0 0;
+        margin: 490px 12px 0 12px;
         border-bottom: 1px solid black;
+        
     }
 }
 
@@ -299,7 +300,7 @@ a {
         font-size: 1rem;
         border-bottom: 1px solid black;
         padding-bottom: 60px;
-        margin: 0;
+        margin: 0 12px 30px 12px;
         padding: 0 12px 30px 12px;
     }
 
